@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PullUp.css">
+
+</head>
+<body>
+  <div class="ball-cursor"></div>
+
+  <!-- ^ SELECT A WORKOUT  SELECT A WORKOUT  SELECT A WORKOUT  *-->
+  <div class="select-workout-container">
+    <div class="select-workout">
+      <div class="pull-day workout">Pull
+        <img src="" alt="">
+      </div>
+      <div class="push-day workout">Push
+        <img src="" alt="">
+      </div>
+      <div class="core-day workout">Core
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- ^ SELECT A WORKOUT  SELECT A WORKOUT  SELECT A WORKOUT  *-->
+
+  <!--  ? TIMER AND REPS COUNTER ? TIMER AND REPS COUNTER   -->
+  <div class="save-workout-container">
+    <div class="count-container">
+      <div class="timer-container">
+        <h1 class="current-date"></h1>
+        <button class="start-btn hover-element">Start Workout</button>
+        <p class="timer-display">00:00:00</p>
+        <h1 class="update-count">Total reps: 
+          <p class="total-reps"></p>
+        </h1>
+      </div>
+      
+      <div class="display-count">
+        <button class="add-count" onclick="addOne()">+1</button>
+        <button class="add-count" onclick="addFive()">+5</button>
+        <button class="add-count" onclick="addTen()">+10</button>
+      </div>
+    </div>
+  <!--  ? TIMER AND REPS COUNTER ? TIMER AND REPS COUNTER   -->
+  <!-- & SAVE WORKOUTS  SAVE WORKOUTS  SAVE WORKOUTS  -->
+    <div class="save-items-container">
+      <button class="save-workout-btn">Save Workout</button>
+
+      <div class="save-form">
+        <label for="type" class="workout-label">Type:</label>
+        <input type="type" list="type" class="type-input workout-input">
+        <datalist id="type">
+          <option value="Pull"></option>
+          <option value="Push"></option>
+          <option value="Core"></option>
+        </datalist>
+      </div>
+
+      <div class="save-form">
+        <label for="reps" class="workout-label">Reps:</label>
+        <input type="reps" list="reps" class="reps-input workout-input">
+      </div>
+
+      <div class="save-form">
+        <label for="duration" class="workout-label">Duration:</label>
+        <input type="duration" class="duration-input workout-input">
+      </div>
+    </div>
+      <!-- & SAVE WORKOUTS  SAVE WORKOUTS  SAVE WORKOUTS  -->
+      <!-- * DISPLAY WORKOUTS  DISPLAY WORKOUTS  DISPLAY WORKOUTS  -->
+  
+    <div class="saved-workouts">
+      
+    </div>
+  </div>
+
+  <!-- * DISPLAY WORKOUTS  DISPLAY WORKOUTS  DISPLAY WORKOUTS  -->
+
+
+  <script src="pullup.js"></script>
+</body>
+</html>
